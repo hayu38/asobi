@@ -1,0 +1,37 @@
+<app>
+    <style scoped>
+        :scope {
+            background-color: #222;
+            color: #aaa;
+        }
+    </style>
+    <app-slider items="{slider}" />
+    <app-news items="{news}" />
+    <app-links items="{links}" />
+    <app-footer message="{message}" />
+
+    <script>
+        //slider info
+        this.slider = [
+            {url: 'http://riotjs.com/ja/', imageUrl: 'image/slider/riot.png'},
+            {url: 'http://gulpjs.com/', imageUrl: 'image/slider/art.png'},
+            {url: 'https://nodejs.org/ja/', imageUrl: 'image/slider/nodejs.png'}
+        ];
+        
+        //news info
+        this.news = [
+            {url: 'http://riotjs.com/ja/compare/', data: '2017/12/23', title: 'Riot vs React & Polymer'},
+            {url: 'http://riotjs.com/download/', data: '2017/01/27', title: 'カスタムタグはHTMLで複雑なビューの構築を可能にします'},
+            {url: 'http://riotjs.com/faq/', data: '2017/02/03', title: 'ミニマリズムが、Riotを他のライブラリと一線を画すものにしています'}
+        ];
+        
+        //link info
+        this.links = [
+            {url: 'http://qiita.com/', imageUrl: 'image/links/qiita.png'},
+            {url: 'https://github.com/', imageUrl: 'image/links/github.png'}
+        ];
+        
+        //footer message
+        this.message= 'Made in Hayu38';
+    </script>
+</app>

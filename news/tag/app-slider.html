@@ -1,0 +1,26 @@
+<app-slider>
+    <style scoped>
+        :scope { display: block}
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        li { display: inline-block }
+        a {
+          color: inherit;
+          display: block;
+          padding: 1.2em;
+          text-decoration: none;
+        }
+        a:hover { background: #777 }
+    </style>
+    
+    <ul>
+        <li each={t, i  in opts.items} if={i == 0} >
+            <a href={t.url}>
+                <img src={t.imageUrl} width="100%" />
+            </a>
+        </li>
+    </ul>
+</app-slider>

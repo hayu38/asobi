@@ -1,0 +1,20 @@
+<app-footer>
+    <style scoped>
+        :scope {
+            margin-top: 2em;
+            display: block;
+            background-color: #fff;
+        }
+        p {
+            font-size: 90%;
+            padding: 1em;
+            text-align: center;
+        }
+    </style>
+    
+    <p>{opts.message} - {year}</p>
+    
+    <script>
+        this.year = (new Date()).getFullYear();
+    </script>
+</app-footer>
